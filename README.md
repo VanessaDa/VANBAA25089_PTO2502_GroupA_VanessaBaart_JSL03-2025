@@ -22,3 +22,28 @@ The project is designed to help users organize their tasks effectively while lea
   _"There are enough tasks on your board, please check them in the console."_
 
 ---
+
+## 🛠️ Technologies Used
+
+- HTML5 (basic structure)
+- CSS3 (styling/layout)
+- JavaScript (ES6+)
+
+---
+
+## 🧩 How It Works (Usage Instructions)
+
+1. Open the project in your browser (e.g., `index.html`)
+2. The system will **prompt you 3 times** (or fewer, if limit is reached):
+   - Enter task `title`
+   - Enter task `description`
+   - Enter task `status` (`todo`, `doing`, or `done`)
+3. Once tasks are entered, open the **Developer Console** (Right-click > Inspect > Console) to:
+   - View **all tasks**
+   - View **only completed tasks**
+4. If total tasks reach 9, you’ll see:
+   ```
+   There are enough tasks on your board, please check them in the console.
+   ```
+
+---
