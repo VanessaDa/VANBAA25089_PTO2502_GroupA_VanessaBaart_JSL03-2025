@@ -1,43 +1,24 @@
-# JSL02 Challenge – Solution Code
+# 📋 Task Management Console App (JSL03)
 
-## Overview
+## 📌 Project Overview
 
-This repository provides the **official solution code for the JSL02 challenge**. It is meant to help students verify their understanding of JavaScript fundamentals, particularly **user input validation**, **conditional logic**, and **basic output to the console**.
+This is a simple yet structured **task management system** built using vanilla JavaScript. The application allows users to **add new tasks, manage status**, and **filter completed tasks** — all through the browser console using interactive prompts.
 
-Students should use this solution to:
-
-- Review their approach to handling user input via `prompt()`
-- Compare logic used for validating task statuses (`todo`, `doing`, `done`)
-- Understand how to handle multiple conditional outputs
-- Improve their code readability and structure before continuing to **JSL03**
-
-## Features Covered
-
-The solution demonstrates how to:
-
-- Prompt the user for **titles**, **descriptions**, and **status** of two tasks
-- Validate the entered status to ensure it's one of the allowed options
-- Display a **summary in the console** if a task is marked `"done"`
-- Log a motivational message if **neither** task is completed
-
-## Structure
-
-The project includes:
-
-- ✅ Interactive JavaScript to collect and validate user input
-- 🧠 Clear loops for input validation
-- 🔍 Simple logic that checks and logs completion status
-- 💬 Console messages to give meaningful feedback to the user
-
-## How to Use This Solution
-
-1. Open the project folder with **Live Server** in VS Code, then open your browser's **developer console** to view the outputs.
-2. Compare the input handling, validation, and logging logic to your own implementation.
-3. Reflect on any areas where your code could be **cleaner**, **more robust**, or **easier to read**.
-4. Make necessary improvements before continuing to JSL03.
+The project is designed to help users organize their tasks effectively while learning about **array manipulation**, **object-oriented thinking**, and **user interaction** in JavaScript.
 
 ---
 
-## License
+## 🚀 Features
 
-This solution code is provided for **educational use only**.
+- 🧠 Tasks stored as structured objects in an array
+- ➕ Add up to **3 new tasks** through prompts
+- 🔢 Automatically assign **incremental unique IDs** to each new task
+- ✅ **Status input validation** (`todo`, `doing`, `done`)
+- 🔍 **Filter** and view only completed tasks
+- 📦 Console logs:
+  - All tasks with the label: `"📋 All Tasks:"`
+  - Completed tasks with the label: `"✅ Completed Tasks:"`
+- 🔔 Alert when task limit is reached:  
+  _"There are enough tasks on your board, please check them in the console."_
+
+---
