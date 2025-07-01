@@ -40,3 +40,17 @@ for (let i = 0; i < 3; i++) {
   // ➕ Add new task to the task list
   tasks.push(newTask);
 }
+// ==============================
+// ✅ OUTPUT TO CONSOLE
+// ==============================
+
+// 📦 Log all tasks
+console.log("📋 All Tasks:");
+console.log(tasks);
+
+// ✅ Filter and log only completed tasks
+const completedTasks = tasks.filter(task => task.status === "done");
+
+console.log("✅ Completed Tasks:");
+console.log(completedTasks);
+
