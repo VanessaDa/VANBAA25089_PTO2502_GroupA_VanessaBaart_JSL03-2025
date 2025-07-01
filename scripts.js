@@ -29,3 +29,14 @@ for (let i = 0; i < 3; i++) {
     alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
     status = prompt(`Enter task ${i + 1} status (todo, doing, done):`).toLowerCase();
   }
+    // 🆔 Generate new task with unique ID
+  const newTask = {
+    id: tasks[tasks.length - 1].id + 1,
+    title,
+    description,
+    status,
+  };
+
+  // ➕ Add new task to the task list
+  tasks.push(newTask);
+}
