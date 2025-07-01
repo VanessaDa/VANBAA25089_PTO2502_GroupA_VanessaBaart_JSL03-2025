@@ -100,3 +100,52 @@ Title: Buy groceries
 Description: Get milk, eggs, and bread
 Status: done
 ```
+
+**Result in console:**
+
+```js
+📋 All Tasks:
+[
+  ...
+  { id: 7, title: "Buy groceries", description: "Get milk, eggs, and bread", status: "done" }
+]
+✅ Completed Tasks:
+[
+  ...
+  { id: 7, title: "Buy groceries", description: "Get milk, eggs, and bread", status: "done" }
+]
+```
+
+---
+
+### 🛑 Reaching the Task Limit
+
+If the total number of tasks reaches **9**, and you try to add another:
+
+**Alert shown:**
+
+```
+There are enough tasks on your board, please check them in the console.
+```
+
+No new prompts will appear after this.
+
+---
+
+### ❌ Entering an Invalid Status
+
+**Prompt:**
+
+```
+Enter task status (todo, doing, done):
+```
+
+**If user types:** `completed`
+
+**Alert shown:**
+
+```
+Invalid status. Please enter 'todo', 'doing', or 'done'.
+```
+
+Prompt will repeat until a valid input is given.
