@@ -46,4 +46,28 @@ The project is designed to help users organize their tasks effectively while lea
    There are enough tasks on your board, please check them in the console.
    ```
 
+## ⚙️ Setup Instructions
+
+1. Clone or download the repository.
+2. Open `index.html` in your browser.
+3. Open the browser console to interact with the task system.
+
+---
+
+## 🧪 Example Console Output
+
+```js
+📋 All Tasks:
+[
+  { id: 1, title: "Gym", status: "todo", ... },
+  { id: 7, title: "Buy groceries", status: "done", ... }
+]
+
+✅ Completed Tasks:
+[
+  { id: 3, title: "Sleep", status: "done", ... },
+  { id: 7, title: "Buy groceries", status: "done", ... }
+]
+```
+
 ---
