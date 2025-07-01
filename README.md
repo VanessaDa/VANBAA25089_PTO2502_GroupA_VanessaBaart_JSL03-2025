@@ -71,3 +71,32 @@ The project is designed to help users organize their tasks effectively while lea
 ```
 
 ---
+
+## 👤 Author
+
+**Vanessa Baart**  
+[GitHub](https://github.com/VanessaDa/VANBAA25089_PTO2502_GroupA_VanessaBaart_JSL03-2025.git)
+[LinkedIn] (www.linkedin.com/in/vanessa-gwama-50841ab7)
+
+---
+
+## 📎 Notes
+
+This project forms part of the [CodeSpace Academy](https://codespace.co.za/) JavaScript learning curriculum.  
+Focus areas: arrays, loops, object creation, validation, and console logging.
+
+---
+
+## 💡 Additional Usage Examples
+
+### ➕ Adding New Tasks
+
+When prompted in the browser:
+
+**Example input sequence:**
+
+```
+Title: Buy groceries
+Description: Get milk, eggs, and bread
+Status: done
+```
