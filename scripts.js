@@ -19,3 +19,13 @@ for (let i = 0; i < 3; i++) {
     alert("There are enough tasks on your board, please check them in the console.");
     break;
   }
+    // 📝 Ask user for task details
+  const title = prompt(`Enter task ${i + 1} title:`);
+  const description = prompt(`Enter task ${i + 1} description:`);
+
+  // 🛡️ Validate task status input
+  let status = prompt(`Enter task ${i + 1} status (todo, doing, done):`).toLowerCase();
+  while (!["todo", "doing", "done"].includes(status)) {
+    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+    status = prompt(`Enter task ${i + 1} status (todo, doing, done):`).toLowerCase();
+  }
