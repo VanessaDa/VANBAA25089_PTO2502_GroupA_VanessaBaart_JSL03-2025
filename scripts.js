@@ -12,3 +12,10 @@ const tasks = [
   { id: 6, title: "Revise Javascript concepts", description: "Practice JS concepts to make sure I understand the fundamentals", status: "doing" },
 ];
 
+// ✅ Add up to 3 new tasks using prompts
+for (let i = 0; i < 3; i++) {
+  // Limit total number of tasks to 9
+  if (tasks.length >= 9) {
+    alert("There are enough tasks on your board, please check them in the console.");
+    break;
+  }
