@@ -1,4 +1,4 @@
-# 📋 Task Management Console App (JSL03)
+# Kanban Board | Launch Career
 
 ## 📌 Project Overview
 
