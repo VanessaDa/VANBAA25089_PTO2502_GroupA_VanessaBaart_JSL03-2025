@@ -4,7 +4,7 @@
 
 This is a simple yet structured **task management system** built using vanilla JavaScript. The application allows users to **add new tasks, manage status**, and **filter completed tasks** — all through the browser console using interactive prompts.
 
-The project is designed to help users organize their tasks effectively while learning about **array manipulation**, **object-oriented thinking**, and **user interaction** in JavaScript.
+It helps users understand **array manipulation**, **object-oriented programming**, **input validation**, and how to interact with users via the browser.
 
 ---
 
@@ -18,7 +18,7 @@ The project is designed to help users organize their tasks effectively while lea
 - 📦 Console logs:
   - All tasks with the label: `"📋 All Tasks:"`
   - Completed tasks with the label: `"✅ Completed Tasks:"`
-- 🔔 Alert when task limit is reached:  
+- 🔔 Alert when total task limit (9) is reached:  
   _"There are enough tasks on your board, please check them in the console."_
 
 ---
@@ -33,24 +33,27 @@ The project is designed to help users organize their tasks effectively while lea
 
 ## 🧩 How It Works (Usage Instructions)
 
-1. Open the project in your browser (e.g., `index.html`)
-2. The system will **prompt you 3 times** (or fewer, if limit is reached):
+1. Open the project in your browser (e.g., open `index.html`)
+2. The system allows adding up to **3 new tasks**, as long as the total task count doesn’t exceed **9**:
    - Enter task `title`
    - Enter task `description`
    - Enter task `status` (`todo`, `doing`, or `done`)
-3. Once tasks are entered, open the **Developer Console** (Right-click > Inspect > Console) to:
-   - View **all tasks**
-   - View **only completed tasks**
-4. If total tasks reach 9, you’ll see:
+3. If the user adds the **9th and final allowed task**, an **alert** will appear:
    ```
    There are enough tasks on your board, please check them in the console.
    ```
+4. After all prompts:
+   - Open **Developer Console** (Right-click > Inspect > Console) to:
+     - View **all tasks**
+     - View **completed tasks** only
+
+---
 
 ## ⚙️ Setup Instructions
 
 1. Clone or download the repository.
 2. Open `index.html` in your browser.
-3. Open the browser console to interact with the task system.
+3. Follow the prompts and check the **console** output.
 
 ---
 
@@ -60,30 +63,15 @@ The project is designed to help users organize their tasks effectively while lea
 📋 All Tasks:
 [
   { id: 1, title: "Gym", status: "todo", ... },
-  { id: 7, title: "Buy groceries", status: "done", ... }
+  { id: 9, title: "Buy groceries", status: "done", ... }
 ]
 
 ✅ Completed Tasks:
 [
   { id: 3, title: "Sleep", status: "done", ... },
-  { id: 7, title: "Buy groceries", status: "done", ... }
+  { id: 9, title: "Buy groceries", status: "done", ... }
 ]
 ```
-
----
-
-## 👤 Author
-
-**Vanessa Baart**  
-[GitHub](https://github.com/VanessaDa/VANBAA25089_PTO2502_GroupA_VanessaBaart_JSL03-2025.git)
-[LinkedIn] (www.linkedin.com/in/vanessa-gwama-50841ab7)
-
----
-
-## 📎 Notes
-
-This project forms part of the [CodeSpace Academy](https://codespace.co.za/) JavaScript learning curriculum.  
-Focus areas: arrays, loops, object creation, validation, and console logging.
 
 ---
 
@@ -91,9 +79,7 @@ Focus areas: arrays, loops, object creation, validation, and console logging.
 
 ### ➕ Adding New Tasks
 
-When prompted in the browser:
-
-**Example input sequence:**
+**Input sequence example:**
 
 ```
 Title: Buy groceries
@@ -101,18 +87,19 @@ Description: Get milk, eggs, and bread
 Status: done
 ```
 
-**Result in console:**
+**Console Output:**
 
 ```js
 📋 All Tasks:
 [
   ...
-  { id: 7, title: "Buy groceries", description: "Get milk, eggs, and bread", status: "done" }
+  { id: 9, title: "Buy groceries", description: "Get milk, eggs, and bread", status: "done" }
 ]
+
 ✅ Completed Tasks:
 [
   ...
-  { id: 7, title: "Buy groceries", description: "Get milk, eggs, and bread", status: "done" }
+  { id: 9, title: "Buy groceries", description: "Get milk, eggs, and bread", status: "done" }
 ]
 ```
 
@@ -120,7 +107,7 @@ Status: done
 
 ### 🛑 Reaching the Task Limit
 
-If the total number of tasks reaches **9**, and you try to add another:
+If the total number of tasks reaches **9**, after the final task is added:
 
 **Alert shown:**
 
@@ -128,7 +115,7 @@ If the total number of tasks reaches **9**, and you try to add another:
 There are enough tasks on your board, please check them in the console.
 ```
 
-No new prompts will appear after this.
+No further tasks can be added after that.
 
 ---
 
@@ -140,12 +127,19 @@ No new prompts will appear after this.
 Enter task status (todo, doing, done):
 ```
 
-**If user types:** `completed`
+If you type an invalid status (e.g., `completed`), the system will repeat the prompt until you enter one of the valid options.
 
-**Alert shown:**
+---
 
-```
-Invalid status. Please enter 'todo', 'doing', or 'done'.
-```
+## 👤 Author
 
-Prompt will repeat until a valid input is given.
+**Vanessa Baart**  
+[GitHub](https://github.com/VanessaDa/VANBAA25089_PTO2502_GroupA_VanessaBaart_JSL03-2025.git)  
+[LinkedIn](https://www.linkedin.com/in/vanessa-gwama-50841ab7)
+
+---
+
+## 📎 Notes
+
+This project forms part of the [CodeSpace Academy](https://codespace.co.za/) JavaScript learning curriculum.  
+Focus areas: arrays, loops, validation, prompts, conditional logic, and structured output.
