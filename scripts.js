@@ -14,12 +14,13 @@ const tasks = [
 
 // ✅ Add up to 3 new tasks using prompts
 for (let i = 0; i < 3; i++) {
-  // Limit total number of tasks to 9
+  // ⛔️ Stop loop early if task limit reached
   if (tasks.length >= 9) {
     alert("There are enough tasks on your board, please check them in the console.");
     break;
   }
-    // 📝 Ask user for task details
+
+  // 📝 Ask user for task details
   const title = prompt(`Enter task ${i + 1} title:`);
   const description = prompt(`Enter task ${i + 1} description:`);
 
@@ -29,7 +30,8 @@ for (let i = 0; i < 3; i++) {
     alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
     status = prompt(`Enter task ${i + 1} status (todo, doing, done):`).toLowerCase();
   }
-    // 🆔 Generate new task with unique ID
+
+  // 🆔 Generate new task with unique ID
   const newTask = {
     id: tasks[tasks.length - 1].id + 1,
     title,
@@ -39,7 +41,14 @@ for (let i = 0; i < 3; i++) {
 
   // ➕ Add new task to the task list
   tasks.push(newTask);
+
+  // ✅ Alert the user if task limit is reached after adding
+  if (tasks.length === 9) {
+    alert("There are enough tasks on your board, please check them in the console.");
+    break;
+  }
 }
+
 // ==============================
 // ✅ OUTPUT TO CONSOLE
 // ==============================
@@ -53,4 +62,3 @@ const completedTasks = tasks.filter(task => task.status === "done");
 
 console.log("✅ Completed Tasks:");
 console.log(completedTasks);
-
